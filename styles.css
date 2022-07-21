@@ -1112,7 +1112,7 @@ html{
       left: -55px;
     }
   }
-  a.butt{
+  .butt{
     position: absolute;
     font-family: "segoe";
     text-decoration: none;
