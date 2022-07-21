@@ -1078,7 +1078,7 @@ html{
       padding-top: 28px;
     }
   }
-  .bw1{
+ .bw1{
     position: relative;
     display: flex;
     width: 320px;
@@ -1112,7 +1112,7 @@ html{
       left: -55px;
     }
   }
-  .butt{
+  a.butt{
     position: absolute;
     font-family: "segoe";
     text-decoration: none;
