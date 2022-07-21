@@ -1121,6 +1121,7 @@ html{
     top: 145px;
     left: 130px;
     color: rgb(255, 255, 255);
+    z-index: 50;
   }
   @media (max-width: 1087px){
     .butt{
