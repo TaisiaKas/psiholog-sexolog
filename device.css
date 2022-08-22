@@ -1,0 +1,253 @@
+@media (max-width: 1087px){
+    [class*="__container"]{
+        width: 900px;
+    }
+    .header{
+        height: 130px;
+    }
+    .header__container{
+        height: 130px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .headertop__container{
+        height: 75px;
+    }
+    .logo{
+        width: 205px;
+        height: 65px;
+        top: 10px;
+    }
+    .address{
+        width: 150px;
+        left: 80px;
+        top: 10px;
+    }
+    .mark{
+        width: 12px;
+        height: 17px;
+    }
+    .addresstext{
+        font-size: 12px;
+        font-weight: 600;
+        padding-left: 10px;
+    }
+    .phonenumber{
+        left: 140px;
+        top: 23px;
+    }
+    .phone{
+        width: 17px;
+        height: 17px;
+    }
+    .number{
+        font-size: 13px;
+    }
+    .calltimelabel{
+        left: 120px;
+        width: 195px;
+    }
+    .callorder{
+        height: 32px;
+        width: 230px;
+        font-size: 14px;
+        left: 15px;
+    }
+    .timelabel{
+        font-size: 11px;
+        line-height: 1.6;
+        left: 35px;
+    }
+    .headerbottom__container{
+        height: 45px;
+    }
+    .ourservices{
+        height: 28px; 
+        left: 10px;  
+    }
+    .ourservices a{
+        font-size: 12px;
+        width: 110px;
+        padding-left: 30px;
+    }
+    .block-vert-line{
+        height: 16px;
+        left: 15px;
+    }
+    .snetworks{
+        width: 100px;
+        left: 40px;
+    }
+    .plank{
+        width: 600px;
+        height: 28px;
+        left: 70px;
+    }
+    #menu_items{
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .first{
+        flex: 1 1 auto;
+        margin: 0 10px 0 10px;
+    }
+    .main{
+        top: 130px;
+    }
+    .pilon img{
+        width: 860px;
+        height: 530px;
+        left: 5px;
+    }
+    .form__pilon{
+        width: 300px;
+        height: 390px;
+        left: 530px;
+    }
+    .form__pilon h1{
+        font-size: 23px;
+        top: 80px;
+    }
+    .form__pilon p{
+        top: 90px;
+        font-size: 15px;
+    }
+    .form__input{
+        width: 280px;
+        height: 35px;
+    }
+    .send{
+        width: 280px;
+        height: 35px;
+        bottom: 70px;
+    }
+    .footer{
+        bottom: 150px;
+    }
+    .footer__container{
+        top: 50px;
+        left: 0;
+    }
+    .block1foot{
+        width: 330px;
+        right: 20px;
+    }
+    .leftblock1{
+        width: 200px;
+    }
+    .rightblock1{
+        width: 200px;
+    }
+    .block2foot{
+        width: 270px;
+        right: 50px;
+    }
+    .leftblock2{
+        width: 150px;
+    }
+    .rightblock2{
+        width: 150px;
+    }
+    .socialfoot{
+        left: -22px;
+    }
+    .loremipsun{
+        left: -28px;
+        width: 180px;
+    }
+}
+@media (max-width: 767.98px){
+    [class*="__container"]{
+        width: 700px;
+    }
+    .header{
+        height: 170px;
+    }
+    .headerbottom__container{
+        display: none;
+    }
+    .logo{
+        background-image: url(image/1.2.png);
+        background-size: cover;
+        width: 170px;
+        height: 115px;
+        top: -20px;
+    }
+    .address{
+        width: 150px;
+        left: 50px;
+        top: -25px;
+    }
+    .phonenumber{
+        left: -100px;
+        top: 60px;
+    }
+    .calltimelabel{
+        left: -110px;
+    }
+    .callorder{
+        height: 28px;
+        width: 200px;
+        font-size: 14px;
+        left: 15px;
+    }
+    .timelabel{
+        left: 20px;
+    }
+    .pilon img{
+        width: 650px;
+        height: 530px;
+    }
+    .form__pilon{
+        border-radius: 16px;
+        width: 230px;
+        height: 400px;
+        left: 400px;
+    }
+    .form__pilon h1{
+        font-size: 18px;
+        top: 60px;
+    }
+    .form__pilon p{
+        top: 70px;
+        font-size: 12px;
+    }
+    .form__item{
+        margin-bottom: 15px;
+    }
+    .form__input{
+        width: 200px;
+        height: 28px;
+    }
+    .send{
+        width: 200px;
+        height: 28px;
+        bottom: 70px;
+    }
+    .loremipsun{
+        display: none;
+    }
+    .block1foot{
+        width: 330px;
+        right: 20px;
+        bottom: 30px;
+    }
+    .leftblock1{
+        width: 200px;
+    }
+    .rightblock1{
+        position: absolute;
+        width: 200px;
+        top: 100px;
+        left: 90px;
+    }
+    .block2foot{
+        width: 270px;
+        right: 100px;
+        bottom: 29px;
+    }
+    .socialfoot{
+        left: -55px;
+        bottom: 23px;
+    }
+}
