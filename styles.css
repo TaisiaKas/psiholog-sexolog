@@ -2,7 +2,6 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
-    text-decoration: none;
 }
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
@@ -14,453 +13,346 @@ a:focus,a:active{outline: none;}
 
 nav,footer,header,aside{display: block;}
 
-/*--------------------*/
-
-.wrapper{
-    position: absolute;
-	overflow: hidden;
-	display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #d7ccea;
-    align-items: center;
-    justify-content: center;
-}
-[class*="__container"]{
-	width: 1087px;
-	margin: 0 auto;
-}
-.header{
-	position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html,body{
+	height: 100%;
 	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 50;
-    background-color: #ffffff;
+	font-size: 100%;
+	line-height: 1;
+	font-family: Rubik;
+	font-size: 12px;
+	color: #616161;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
-.header__container{
-    position: relative;
-	display: flex;
-    flex-direction: column;
-	height: 150px;
-	align-items: center;
-    justify-content: center;
-	background-color: rgb(255, 255, 255);
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+html{
+    -ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /*--------------------*/
-.headertop__container{
+.no-webp body {
+    background-image: url(images/backgWF.png);
+}
+.webp body{
+    background-image: url(img/backgWF.webp);
+}
+body{
+    background-repeat: no-repeat;
+    background-color: #045185;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 660px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+/*--------------------*/
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+    margin: 0 auto;
+}
+/*--------------------*/
+.header{
     position: relative;
     display: flex;
-    width: 100%;
-    height: 95px;
+    min-width: 1100px;
+    height: 82px;
+    justify-content: flex-end;
+}
+.no-webp .logo {
+    background-image: url(images/price.png)
+}
+.webp .logo{
+    background-image: url(img/price.webp)
 }
 .logo{
     position: relative;
-    display: flex;
-    height: 100%;
-    width: 289px;
-    background-image: url(image/1.png);
+    width: 250px;
+    height: 250px;
     background-size: cover;
-    background-position: center center;
-}
-.address{
-    position: relative;
-    display: flex;
-    height: 80%;
-    width: 180px;
-    left: 130px;
-    align-items: center;
-}
-.mark{
-    position: relative;
-    width: 15px;
-    height: 22px;
-    background-image: url(image/2.png);
-    background-size: cover;
-}
-.addresstext{
-    font-size: 15px;
-    font-weight: 700;
-    padding-left: 20px;
-}
-.phonenumber{
-    position: relative;
-    display: flex;
-    height: 40%;
-    width: 180px;
-    align-items: center;
-    left: 190px;
-    top: 15px;
-}
-.phone{
-    position: relative;
-    width: 21px;
-    height: 22px;
-    background-image: url(image/3.png);
-    background-size: cover;
-}
-.number{
-    position: relative;
-    font-weight: 700;
-    left: 5px;
-}
-.calltimelabel{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-    height: 100%;
-    left: 180px;
-}
-.callorder{
-    position: relative;
-    display: flex;
-    height: 38px;
-    width: 220px;
-    left: 22px;
-    top: 2px;
-    background-color:#63427f;
-    border-radius: 30px;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-    color: white;
-}
-.callorder:hover{
-    background-color:#f5c6e6;
-    color: rgb(0, 0, 0);
-}
-.timelabel{
-    position: relative;
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    height: 45%;
-    line-height: 1.7;
-    left: 32px;
-    top: 6px;
-}
-/*--------------------*/
-.headerbottom__container{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 55px;
-    align-items: center;
-}
-.ourservices{
-    position: relative;
-    display: flex;
-    width: 130px;
-    height: 34px;
-    left: 20px;
-    background-color:#ef4cae;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
-    z-index: 50;
-}
-.ourservices a{
-    color: white;
-    font-size: 15px;
-    padding-left: 18px;
-}
-.ourservices a > .dropspase{
-    position:absolute;
-    display:none; 
-}
-.ourservices a:hover > .dropspase{
-    display:none;  
-    width: 85%; 
-    height: 150px;
-    background-color: #ffffff;
-    border: 2px solid black;
-    z-index: 1;
-    margin-top: 6px;
-}
-
-.block-vert-line{
-    position: relative;
-    width: 2px;
-    height: 23px;
-    background-color: white;
-    left: 7px;
-    z-index: 150;
-}
-/*--------------------*/
-.snetworks{
-    position: relative;
-    display: flex;
-    width: 130px;
-    height: 80%;
-    left: 100px;
-}
-.fb{
-    width: 43px;
-    background-image: url(image/9.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.vk{
-    width: 43px;
-    background-image: url(image/10.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.insta{
-    width: 42px;
-    background-image: url(image/11.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/*--------------------*/
-.plank{
-    position: relative;
-    display: flex;
-    width: 700px;
-    height: 34px;
-    left: 120px;
-    background: linear-gradient(#f661b5, #e838a7);
-    border-radius: 25px;
-    background-position: center;
-    align-items: center;
-}
-#menu_items{
-    margin: 0 -5px;
-    display: flex;
-    font-size: 15px;
-    position: relative;
-}
-#menu_items a{
-    color: rgb(255, 255, 255);
-}
-.first{
-    flex: 1 1 auto;
-    margin: 0 10px 0 30px;
-}
-.second{
-    flex: 1 1 auto;
-    margin: 0 10px;
-}
-.third{
-    flex: 1 1 auto;
-    margin: 0 10px;
-}
-.fourth{
-    flex: 1 1 auto;
-    margin: 0 10px;
-}
-.fifth{
-    flex: 1 1 auto;
-    margin: 0 10px;
-}
-.sixth{
-    flex: 1 1 auto;
-    margin: 0 10px;
-}
-.seventh{
-    flex: 1 1 auto;
-    margin: 0 10px;
-}
-.eighth{
-    flex: 1 1 auto;
-    margin: 0 10px 0 5px;
-}
-/*--------------------*/
-.main{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 670px;
-    top: 150px;
-    background-image: url(image/14.png);
-    background-size: cover;
-}
-
-.main__container{
-    position: relative;
-    display: flex;
-    height: 680px;
-    z-index: 1050;
-    top: 10px;
-    justify-content: center;
-}
-.pilon img{
-    position: relative;
-    width: 1030px;
-    height: 635px;
-    left: 10px;
-    bottom: 10px;
-}
-.form__pilon{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 600px;
-    top: 90px;
-    width: 400px;
-    height: 520px;
-    border-radius: 20px;
-    background-color: #ffffff;
-    justify-content: center;
-    align-items: center;
-}
-.form__pilon h1{
-    font-weight: 200;
-    color: rgb(51, 170, 170);
-    position: relative;
-    top: 60px;
-}
-.form__pilon p{
-    padding-bottom: 190px;
-    top: 70px;
-    font-weight: 700;
-    position: relative;
-}
-.form__item{
-    position: relative;
-    display: block;
-    font-size: 11px;
-    font-weight: 700;
-    margin-bottom: 28px;
-    bottom: 180px;
-}
-.form__input{
-    position: relative;
-    display: block;
-    background-color: #eeeeee;
-    width: 350px;
-    height: 40px;
-    padding-left: 20px;
-    top: 100px;
-
-}
-#list{
-    top: 120px;
-}
-.form__label span{
-    position: absolute;
-    top: 95px;
-    left: 10px;
-    font-size: 15px;
-}
-.send{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    min-height: 40px;
-    background-color: #000;
-    color: white;
-    cursor: pointer;
-    bottom: 70px;
-}
-.send:hover{
-    background-color: #4e3b72;
-    color: #000;
-}
-.send:active{
-    top: -60px;
-}
-/*--------------------*/
-.footer{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 150px;
-    bottom: 45px;
-    background: linear-gradient(#64427f, #d7ccea);
-    z-index: 1050;
-}
-.footer__container{
-    position: relative;
-    display: flex;
-    left: 25px;
-    font-size: 10px;
-    font-weight: 700;
-}
-.block1foot{
-    position: relative;
-    display: flex;
-    width: 30%;
-    line-height: 1.7;
-}
-.block1foot h2{
-    position: absolute;
-    top: 15px;
-    left: 90px;
-}
-.leftblock1{
-    position: relative;
-    width: 50%;
-    top: 50px;
-    left: 90px;
-}
-.rightblock1{
-    position: relative;
-    width: 50%;
-    top: 50px;
-    left: 40px;
-}
-.block2foot{
-    position: relative;
-    display: flex;
-    width: 25%;
-    line-height: 1.7;
-}
-.block2foot h2{
-    position: absolute;
-    top: 15px;
-    left: 90px;
-}
-.leftblock2{
-    position: relative;
-    width: 50%;
-    top: 50px;
-    left: 90px;
-}
-.rightblock2{
-    position: relative;
-    width: 50%;
-    top: 50px;
-    left: 40px;
-}
-.socialfoot{
-    position: relative;
-    display: flex;
-    width: 20%; 
-    left: 70px;
-}
-.socialfoot h2{
-    position: absolute;
-    top: 15px;
-    left: 9px;
-}
-.loremipsun{
-    position: relative;
-    display: flex;
-    width: 14%; 
-    align-items: center;
-    justify-content: center;
     bottom: 20px;
-    left: 10px;
 }
-.device{
+/*--------------------*/
+.yeldackastones{
+    display: none;
+}
+/*--------------------*/
+.no-webp .aqualunger {
+    background-image: url(images/aqualunger.png)
+}
+.webp .aqualunger{
+    background-image: url(img/aqualunger.webp)
+}
+/*--------------------*/
+[class*="__container"]{
+    min-height: 600px;
+}
+.content__container{
+    display: flex;
     position: relative;
-    width: 30px;
-    height: 51px;
-    background-image: url(image/12.png);
+    min-width: 870px;
+    width: 70%;
+    height: 680px;
+    left: 190px;
+}
+/*--------------------*/
+.aqualunger{
+    position: absolute;
+    background-size: cover;
+    width: 220px;
+    height: 141px;
+    top: 100px;
+    z-index: 50;
+    left: -270px;
+    animation: aqualunger 35s linear alternate 0s infinite; 
+}
+/*--------------------*/
+.description__container{
+    position: relative;
+    width: 55%;
+    display: flex;
+}
+/*--------------------*/
+.text__container{
+    position: relative;
+    display: flex;
+    min-width: 400px;
+}
+.no-webp .stripes {
+    background-image: url(images/12345679007859595.gif)
+}
+.webp .stripes{
+    background-image: url(img/12345679007859595.webp)
+}
+.stripes{
+    position: relative;
+    display: flex;
+    min-width: 450px;
+    height: 606px;
     background-size: cover;
 }
-.loremipsun h2{
-    padding-left: 5px;
+/*--------------------*/
+.no-webp .inscription {
+    background-image: url(images/inscription.png)
 }
+.webp .inscription{
+    background-image: url(img/inscription.webp) 
+}
+.inscription{
+    position: relative;
+    display: flex;
+    background-size: cover;
+    min-width: 430px;
+    height: 560px;
+    right: 398px;  
+    top: 30px; 
+}
+/*--------------------*/
+.no-webp .smallins{
+    background-image: url(images/smallins.png)
+}
+.webp .smallins{
+    background-image: url(img/smallins.webp) 
+}
+.smallins{
+    position: absolute;
+    display: flex;
+    background-size: cover;
+    min-width: 250px;
+    height: 187px;
+    transform: rotate(49deg);
+    left: -100px;
+    top: -5px;
+    z-index: 5;
+}
+/*--------------------*/
+.yelstones__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    width: 45%;
+    height: 400px;
+    top: 40px;
+}
+/*--------------------*/
+.no-webp .yeldack{
+    background-image: url(images/yeldack.gif)
+}
+.webp .yeldack{
+    background-image: url(img/yeldack.webp)
+}
+
+.yeldack__container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+/*--------------------*/
+.yeldack{
+    position: relative;
+    background-size: cover;
+    transform: scale(-1, 1);
+    width: 250px;
+    height: 467px;  
+}                       
+.stones{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    bottom: 240px;
+    left: 50px;
+}
+/*--------------------*/
+/*--------------------*/
+.no-webp #stoneabout {
+    background-image: url(images/1.png);
+}
+.webp #stoneabout{
+    background-image: url(img/1.webp);
+}
+.no-webp #stoneabout:hover {
+    background-image: url(images/1а.png);
+}
+.webp #stoneabout:hover{
+    background-image: url(img/1а.webp);
+}
+.no-webp #stoneabout:active {
+    background-image: url(images/1а.png);
+}
+.webp #stoneabout:active{
+    background-image: url(img/1а.webp);
+}
+#stoneabout{
+    position: relative;
+    width: 33%;
+    min-width: 140px;
+    height: 160px;
+    background-size: cover;
+    z-index: 5;
+    bottom: 50px;
+    background-color: transparent;
+}
+#stoneabout:hover{
+    background-size: cover;
+}
+#stoneabout:active {
+    background-size: cover;
+	}
+/*--------------------*/
+.no-webp #stonebuy {
+    background-image: url(images/2.png);
+}
+.webp #stonebuy{
+    background-image: url(img/2.webp);
+}
+.no-webp #stonebuy:hover {
+    background-image: url(images/2а.png);
+}
+.webp #stonebuy:hover{
+    background-image: url(img/2а.webp);
+}
+.no-webp #stonebuy:active {
+    background-image: url(images/2а.png);
+}
+.webp #stonebuy:active{
+    background-image: url(img/2а.webp);
+}
+#stonebuy{
+    position: relative;
+    width: 33%;
+    min-width: 185px;
+    height: 150px;
+    background-size: cover;
+    z-index: 5;
+    bottom: 30px;
+    right: 55px;
+}
+#stonebuy:hover{
+    background-size: cover;
+}
+#stonebuy:active {
+    background-size: cover;
+	}
+/*--------------------*/
+.no-webp #stonegallery {
+    background-image: url(images/3.png);
+}
+.webp #stonegallery{
+    background-image: url(img/3.webp);
+}
+.no-webp #stonegallery:hover {
+    background-image: url(images/3а.png);
+}
+.webp #stonegallery:hover{
+    background-image: url(img/3а.webp);
+}
+.no-webp #stonegallery:active {
+    background-image: url(images/3а.png);
+}
+.webp #stonegallery:active{
+    background-image: url(img/3а.webp);
+}
+#stonegallery{
+    position: relative;
+    width: 34%;
+    min-width: 160px;
+    height: 170px;
+    background-size: cover;
+    z-index: 3;
+    bottom: 60px;
+    right: 100px;
+}
+#stonegallery:hover{
+
+    background-size: cover;
+}
+#stonegallery:active {
+
+    background-size: cover;
+	}
+/*--------------------*/
+/*--------------------*/
+.no-webp .standimg{
+    background-image: url(images/stand.png)
+}
+.webp .standimg{
+    background-image: url(img/stand.webp)
+}
+.stand{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 660px;
+}
+
+.standimg{
+    background-size: cover;
+    min-width: 600px;
+    height: 600px;
+}
+/*--------------------*/
+
+ 
+
+
+
